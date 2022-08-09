@@ -24,9 +24,9 @@ main {
 
 ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
-  grid-template-rows: repeat(auto-fit, 400px);
-  gap: 2em;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: repeat(auto-fit, 420px);
+  gap: 2.5em;
   justify-content: center;
   list-style-type: none;
 }
@@ -37,6 +37,7 @@ li {
   grid-template-columns: auto 1fr auto auto;
   grid-template-rows: 400px;
   padding: 0.5em;
+  border-radius: 2px;
 }
 
 .lib,
@@ -53,6 +54,14 @@ li {
 .title {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+}
+
+.inline-descript {
+  font-size: 1.175rem;
+  font-weight: 500;
+  position: relative;
+  right: -0.4em;
+  top: 0.05em;
 }
 
 .lib {
