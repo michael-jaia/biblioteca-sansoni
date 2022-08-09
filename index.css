@@ -64,6 +64,18 @@ li {
   top: 0.05em;
 }
 
+.right-border {
+  border-right: 6px solid transparent;
+  border-image: linear-gradient(#C08552, #A55C1B, #772F1A, #A55C1B, #C08552);
+  border-image-slice: 1;
+}
+
+.left-border {
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(#ECCC68,#D3D3D3);
+  border-image-slice: 1;
+}
+
 .lib {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
