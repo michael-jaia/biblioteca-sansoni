@@ -1,6 +1,6 @@
 @font-face {
   font-family: Helvet;
-  src: url(Helvetica.ttf);
+  src: url(./fonts/Helvetica.ttf);
 }
 
 * {
@@ -10,12 +10,13 @@
 }
 
 html {
-  background-color: #000;
+  font-family: Helvet;
+  font-weight: 500;
+  line-height: 1;
 }
 
 body {
-  font-family: Helvet;
-  font-weight: 500;
+  background-color: #000;
 }
 
 main {
@@ -32,12 +33,13 @@ ul {
 }
 
 li {
-  background-color: #FFF;
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: min-content 1fr min-content min-content;
   grid-template-rows: 400px;
-  padding: 0.5em;
+
+  background-color: #FFF;
   border-radius: 2px;
+  padding: 0.5em;
 }
 
 .lib,
@@ -47,18 +49,24 @@ li {
 
 .title {
   font-size: 3.2rem;
-}
+ }
+
+ .accent-upper {
+  line-height: 0.975;
+  padding-right: 0.225em;
+ }
 
 .lib,
 .descript,
 .title {
-  writing-mode: vertical-rl;
   text-orientation: mixed;
+  writing-mode: vertical-rl;
 }
 
 .inline-descript {
   font-size: 1.175rem;
   font-weight: 500;
+
   position: relative;
   right: -0.4em;
   top: 0.05em;
